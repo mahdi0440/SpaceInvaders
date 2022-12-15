@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="game-cont">
+        <div id="menu" class="animated fadeIn">
+            <h1 class="animated fadeIn">Space Invaders</h1>
+            <button id="start-game">Start Game</button>
+        </div>
+        <div id="game-over" class="animated fadeIn">
+            <h1 class="animated fadeIn">Game Over</h1>
+            <input type="text"/>
+            <button id="back-to-menu">Back to menu</button>
+        </div>
+        <div id="game-window" class="animated fadeIn">
+            <h2 id="announcement" class="animated fadeInUp"></h2>
+            <div id="life"></div>
+            <div id="score-cont">
+                <p id="score">Score: </p>
+            </div>
+            <div id="level-cont">
+                <p id="level">Level: </p>
+            </div>
+            <div id="stats-cont">
+                <p id="stats">Enemies Killed: </p>
+            </div>
+            <div id="player-cont">
+                <div id="player-rotate">
+                    <img id="player" src="assets/sprites/spaceship.png" alt="player" />
+                </div>
+            </div>
+            <div id="enemy-cont"></div>
+        </div>
+    </div>
+</body>
+</html>
